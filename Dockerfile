@@ -7,4 +7,6 @@ RUN haraka -i /haraka
 WORKDIR /haraka
 RUN npm i haraka-plugin-graph
 
+ADD rcpt_to.mba.js plugins/
+
 CMD ["haraka", "-c", "/haraka"]
